@@ -1,0 +1,792 @@
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="stylesheet" media="screen" href="css/style5.css">
+    <title>Home||Mini Convention 17</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+	<link href="css/stylell.css" rel="stylesheet" type="text/css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/button.css">
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="footer/css/style.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/notif.css"></link>
+    <script src="js/jquery1.js"></script>
+    <style>
+	mark
+	{
+	   color:blue;
+	   text-decoration:none;
+	   font-size:15px;
+	   background:none;
+	}
+	mark:hover
+	{
+	   color:red;
+	   text-decoration:none;
+	}
+	.text {
+  text-align: center;
+  color:#fff;
+  margin-top:100px;
+ 
+}
+
+.text a { color:#fff; text-decoration: none; font-size:42px;font-weight:100;font-family:OCR A Std;}
+    .preload{
+         width: 100%;
+        position: fixed;
+        height: 100%;
+        z-index: 1000000000;
+        background-color: #97c2d9;
+    }
+    .loader{
+      text-align: center;
+      
+    }
+	
+
+    .gif{
+      display: block;
+      position: absolute;
+      height: auto;
+      top: 30%;
+
+      z-index: 100;
+    }
+	
+
+    .scrl-btn{
+      display: block;
+      position: absolute;
+      width: 40%;
+      height: auto;
+      top: 90%;
+
+      z-index: 100;
+      left: 30%;
+    }
+    @media (max-width:700px)
+    { #bs-example-navbar-collapse-1{min-height:240px;}
+
+      #mobile-logo{display:block; width: 40%; margin: auto; position: absolute;
+    
+       width: 90%;
+    
+        top: 25%;
+       left: 5%;}
+
+
+    }
+
+
+.notice:before {
+  opacity: 0;
+    position: absolute;
+    top: 50%;
+    /* margin-top: -17px; */
+    /* left: -17px; */
+    background-color: #DDD;
+    color: #FFF;
+    /* width: 30px; */
+    /* height: 30px; */
+    border-radius: 100%;
+    /* text-align: center; */
+    line-height: 0px;
+    /* font-weight: bold; */
+    /* font-family: Georgia; */
+    /* text-shadow: 1px 1px rgba(0, 0, 0, 0.5); */
+}
+
+    </style>
+
+<style>
+
+* {margin: 0; padding: 0;}
+			body {background: #ccc;}
+
+			.slider{
+			width: 640px; /*Same as width of the large image*/
+			position: relative;
+			/*Instead of height we will use padding*/
+			padding-top: 320px; /*That helps bring the labels down*/
+
+			margin: 100px auto;
+			
+			
+
+			/*Lets add a shadow
+			box
+			-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);*/
+			}
+
+			.overlay
+			{
+				z-index: 1500;
+				background-color: rgba(0,0,0,0.9);
+				width: 0%;
+				height: 100%;
+				position: fixed;
+			}
+
+
+</style>
+</head>
+
+<body id="page-top" class="index" onload="init();" style="margin:0px; background-color: rgb(247,108,108);">
+<!--preload region--->
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom scrl">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                  <a href="#page-top" class="norm"><img style="width: 70px;height:70px; position:absolute; top: 15%;" src="favicon.png"></a>
+                  <a href="#page-top" class="phone"><img style="width: 44px; position:absolute; top: 6%;left: 2%" src="favicon.png"></a>
+            </div>
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="page-scroll">
+                      <a href="#">Home</a>
+                    </li>
+                    
+                    <li class="page-scroll">
+                      <a href="register.html" >Register</a>
+                    </li>
+
+					
+                    <li class="page-scroll">
+                        <a href="team.html">Team</a>
+                    </li>
+					
+                    <!--<li class="page-scroll">
+                        <a href="faq.html">Faq</a>
+                    </li>-->
+                    
+
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+<a href="#page-top" id="return-to-top"><i class="icon-chevron-up"></i></a>
+<a href="#contact" id="down-to-contact"><i class="icon-chevron-down"></i></a>
+
+<link href="css/scroll-top.css" rel="stylesheet">
+<script>
+// ===== Scroll to Top ====
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);
+           // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);
+          // Else fade out the arrow
+    }
+});
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50 && $(this).scrollTop() <=1600 ) {        // If page is scrolled more than 50px
+        $('#down-to-contact').fadeIn(200);
+           // Fade in the arrow
+    } else {
+        $('#down-to-contact').fadeOut(200);
+          // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+  $('html, body').stop().animate({
+      scrollTop: 0
+  }, 1250, 'easeInOutExpo');
+
+});
+
+$('#down-to-contact').click(function() {      // When arrow is clicked
+  $('html, body').stop().animate({
+      scrollTop: 2000
+  }, 1250, 'easeInOutExpo');
+});
+
+
+
+
+
+</script>
+
+
+
+
+    <!-- Header -->
+    <header class="scrl">
+                       <div class="text gif left">
+                           <h1>
+                                <a href="" class="typewrite"  data-period="2000" data-type='[ "Elysium" ]'>
+                                <span class="wrap"></span>
+                                </a>
+                            </h1>
+                        </div>
+                    
+					<script>
+					var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+					
+					
+					</script>
+					   
+					   
+					   
+					  <div class="text gif left">
+                          <h1 style="font-family: Courier New;font-size:45px;margin-top:100px;font-weight:100;text-transform:none;"  onmouseover="this.innerHTML='Create Share Innovate';" onmouseout="this.innerHTML='17th November 2017';">17th November 2017</h1>
+                      </div>
+					  
+					  <div class="gif left">
+                          <img src="images/elysium.png" style="margin-top:-120px;height:200px;width:450px;" class="img-responsive">
+                      </div>
+                    
+                  <!-- particles.js container -->
+                  <div id="particles-js" style="display:;">
+                   </div>
+                  <script src="js/particles.js"></script>
+                  <script src="js/app.js"></script>
+                  <script src="js/lib/stats.js"></script>
+                  <span class="scroll-btn scrl-btn" id="scrollbtnn">
+                  </span>
+
+    </header>
+
+<ul class="accordion hidden-xs">
+<h1 style="margin-left:97px;color:white;font-family:OCR A Std;">Categories</h1>
+      <li class="tabs ">
+        <div class="social-links coding">
+          <a></a>
+        </div>
+        <div class="paragraph">
+          <h1 style="font-family:OCR A Std">Technical</h1>
+          <p><span style="font-family:Brush Script MT;color:blue;font-size:35px;">Mind Sweeper:</span><br>
+		  <br><span style="font-family:Apple Chancery;">Code snippets will be given and the participants
+             This is a team event where each team consists of 5 members (same year). It consists of two rounds first MIXED BAG and second HACKBOX.   
+			<br>
+			<!--<a target="_blank" href="pdf/mind sweeper.pdf"><mark>Read More</mark></a> -->
+		  
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal">Read More</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 style="color:blue" class="modal-title">Mind Sweeper</h4>
+        </div>
+        <div class="modal-body">
+		  <ol start="1">
+		  <li>This is a team event where each team consists of 5 members (same year). It 
+             consists of two rounds first MIXED BAG and second HACKBOX.</li>
+			  <li>The first round i.e. 
+               mixed bag will consist of questions from cryptography, basics of cyber security, 
+               Linux, Cloud and IT etc.</li>
+			  <li>Top teams would qualify for the second round. In second 
+            round every team would be given questions from the bandit level (question from 
+             war games ).</li>
+			  
+			  <li> Teams would have to open a Linux terminal window and perform 
+               some basic Linux operations. The competiti
+              on would be an SSH provided by the 
+              site only.</li>
+			  <li>Students just need to follow the instructions that they get during the 
+Bandit play and find the password from different files in SSH. </li>
+<li> The team that 
+finishes the task first wins the event.</li>
+			
+		  
+		  
+		  </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+		  </span></p>
+        </div>
+      </li>
+	    <li class="tabs">
+        <div class="social-links debating">
+          <a href=""></a>
+        </div>
+        <div class="paragraph">
+          <h1 style="font-family:OCR A Std">Fun</h1>
+          <p><span style="font-family:Brush Script MT;color:blue;font-size:35px;">Movie Maniac:</span><br><br>
+		  <span style="font-family:Apple Chancery;">
+		  In this event we’ll be having a quiz (type of) on movies, I suggest bollywood but we can take it as it suits us.
+          The quiz will be divided into two part:-
+		  
+		    1)Maniacs Main
+			2)Maniacs Advance<br>
+		  
+<!--<a target="_blank"  href="pdf/MovieManiac.pdf"><mark style="font-size:13px;">Read More</mark></a> 
+-->
+
+       <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#movie">Read More</button>
+
+  <div class="modal fade" id="movie" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 style="color:blue" class="modal-title">Movie Maniac</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+		     In this event we’ll be having a quiz on movies,
+            The quiz will be divided into two parts-
+			<ol start="1">
+              1. Maniacs Main-It will be a written round consisting of questions from the categories given below.
+              <br>2. Maniacs Advance- It will be a buzzer round consisting of questions from the categories given below, qualified participants from the “Main” round will be giving this.
+              <br>3.Mystery Round
+            </ol>
+			<span style="color:blue">Dialogues</span>
+ 	        Some special dialogues will be given from the movie to identify the movie.
+            <br>
+			<span style="color:blue">Casting</span>
+Whole or partial casting will be given to identify the movie.
+<br>
+<span style="color:blue">Storyline</span>
+Storyline will be written in terms of X and Y and they to identify the movie.
+<br>
+<span style="color:blue">Union</span>
+Two actor will be given and participants have to list out the common movies done by them , the  more you give the better you score.
+<br>
+<span style="color:blue">Song</span>
+The name of the song will be made available to identify the movie.
+<br>
+<span style="color:blue">Song line</span>
+The main line of the song will be given to identify the song as well as the movie.
+<br>
+<span style="color:blue">Sequels and prequels</span>
+Movie will be given and we might ask them to write down their sequel or prequel.
+<br>
+<span style="color:blue">The Year</span>
+A movie will be given and the participants have to write a movie name which was made the same year and was done by the same actor or actress (Akshay Kumar will definitely help them).
+<br>
+The one scoring the maximum point will be the winner.
+
+			
+			
+			
+		  </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+
+		   </span></p></div>
+      </li>
+    
+      </li>
+      <li class="tabs">
+        <div class="social-links linkedin-icon">
+           <a href=""></a>
+        </div>
+        <div class="paragraph">
+          <h1 style="font-family:OCR A Std">Fun+Tech</h1>
+          <p><span style="font-family:Brush Script MT;color:blue;font-size:30px;">Big Brand Theory:</span>
+		  <br><br><span style="font-family:Apple Chancery;">
+		  The event is all about creating your own “Big Brand” , marketing and advertisement
+is a part of the tasks that will follow. A fake concept of a product will be given to you and all you need to is
+market yourself .
+       <br>
+	   <!--<a target="_blank" href="pdf/bbt.pdf"><mark>Read More</mark></a> 
+		 -->
+		  <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#bbt">Read More</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="bbt" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="color:blue;">The Big Brand Theory</h4>
+        </div>
+        <div class="modal-body">
+		   <p>
+		   The event is all about creating your own   “Big Brand” , marketing and advertisement is a part of the tasks that will follow. A fake concept of a product will be given to you and all you need to is market yourself in the real world Bidholi.
+Each team will be given something weird for their company as like a broken smartphone , cap of pens , notebook without pages and so on [we just need to give them the idea, and not the real world object ], the event will be of 2 hours.
+
+They have to implement 3 tasks on which their score will be marked-
+            <ol>
+			  1) A facebook page<br>
+              2) Corporate table<br>
+              3) Short Ad<br>
+
+			</ol>
+			Teams need to give a name to their company, should be professional but humorous.
+<br><span style="color:blue">A facebook page-</span> Each team needs to make their company facebook page, on which they need to list their product and the specification of it, and need to hype their page.
+Scoring will be done on the basis of-
+Number of likes on the page.
+The name of their company.
+Product listed along with its specification on the page.
+Users comment (the more humorous the better it is, the best comment will also be awarded, preferred language to write comment is Sarcasm).
+
+<br><span style="color:blue">Corporate table</span> – A table will be provided from our side, which they are free to place anywhere in the campus, and should customize it with whatever they get. The HQ is for telling people about their page and to get reviews on their product.
+Scoring will be on the basis of-
+How well it is customized.
+Number of distinct people coming to their table and enquiring about the product and reviewing it.
+
+
+<br><span style="color:blue">Short Ad-</span> They need to make a short ad of at least 25 seconds on the product, preferable genre will be comedy and how humorous they could create it.
+Scoring will done on the basis of elements of the advertisement.
+
+
+
+			
+			
+		   </p>
+    	  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+        </div>
+      </li>
+      <li class="tabs">
+        <div class="social-links youtube-icon">
+          <a href=""></a>
+        </div>
+        <div class="paragraph">
+          <h1 style="font-family:OCR A Std;">Fun</h1>
+          <span style="font-family:Brush Script MT;color:blue;font-size:35px;">Twisters:</span>
+		 <p>This will be an individual participation event comprising of two rounds. In the first round participants will be given some English as well as Hindi idioms. They have to fill 
+		   <br><button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#twisters">Read More</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="twisters" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="color:blue">Twisters</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+		  This will be an individual participation event comprising of 
+		  two rounds. In the first round participants will be given some
+		  English as well as Hindi idioms. They have to fill in the blanks to complete the idioms. For eg. Out of the _____. The answer to this would be “blue”, 
+		  thus completing the idiom “out of the blue”. 
+		  <br>
+		  Top 10 scorers of the first round will move on to the 
+		  second round in which each participant has to frame his/her 
+		  own tongue twister which should not be of not more than 10 words. Now chits numbered from 1 to 10 will be put in a bowl and each participant will be assigned a number as well. Every participant has to select a chit and if the 1st participant gets a chit numbered 5 , then contestant number on has to recite the tongue twister created by contestant number 5 . Participants will be judged upon how well they are able to recite the tongue twisters as 
+		  well as on the basis of the twister they make .
+		  </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+		  
+		  
+		  </p>
+        </div>
+      </li>
+    </ul>
+   <div class="portmobile">
+    <section id="portfolio" style="background-color: rgb(250, 171, 171)">
+    <div class="row">
+          <div class='col-md-6 col-md-offset-3' style="text-align: center;">
+                <h2 style="color:royalblue;font-family:OCR A Std;font-size:30px;">Categories</h2><br/>
+                <h3 style="font-size: 32px;color: #fff;text-transform: capitalize;">Technical</h2><br/><br/></div>
+        </div>
+      <div id="animation_container" style="background-color:rgba(102, 102, 255, 0.00);text-align: center;">
+        <img src="images/coding.png" class="set2" style="left: 37%;"><br/><br/><br/>
+            </div>
+            <div class="row">
+          <div class='col-md-6 col-md-offset-3' style="text-align: center;padding-top: 20px;">
+		  <h2 style="font-size: 20px;color:blue;font-family:Times New Roman;">Mind Sweeper</h2>
+                <p style="color: #fff;padding-left: 12px;padding-right: 12px;">
+				    
+				   This is a team event where each team consists of 5 members (same year). It consists
+of two rounds first MIXED BAG and second HACKBOX.<br><br>
+   <a href="mindsweeper.html" target="_blank"><button class="btn" style="background-color:white;">Read More</button></a>
+				
+				<br/><br/></p></div>
+        </div>
+    </section>
+    <section id="portfolio" style="background-color: rgb(124, 204, 190);">
+    <div class="row">
+          <div class='col-md-6 col-md-offset-3' style="text-align: center;">
+                <h2 style="font-size: 32px;color: #fff;text-transform: capitalize;">Fun</h2><br/><br/>
+		  </div>
+    </div>
+    <div id="animation_container" style="background-color:rgba(102, 102, 255, 0.00);text-align: center;">
+        <img src="images/fun.png" class="set2" style="left: 37%;"><br/><br/><br/>
+    </div>
+    <div class="row">
+          <div class='col-md-6 col-md-offset-3' style="text-align: center;padding-top: 20px;">
+                <h2 style="font-size: 20px;color:blue;font-family:Times New Roman;">Movie Maniac</h2>
+          
+				<p style="color: #fff;padding-left: 12px;padding-right: 12px;">
+ 					  In this event we’ll be having a quiz (type of) on movies, I suggest bollywood but we can take it as it suits us.
+The quiz will be divided into two part:-
+<br><br><a href="movie.html" target="_blank"><button class="btn" style="background-color:white;">Read More</button></a>
+		
+				
+				<br/></p>
+				
+				<br>
+				<h2 style="font-size: 20px;color:blue;font-family:Times New Roman;">Twisters</h2>
+          
+				<p style="color: #fff;padding-left: 12px;padding-right: 12px;">
+ 					 This will be an individual participation event comprising of two rounds. In the first
+round participants will be given some English as well as Hindi idioms. 
+<br><br><a href="twister.html" target="_blank"><button class="btn" style="background-color:white;">Read More</button></a>
+		
+				
+				<br/></p>
+				
+		  </div>
+    </div>
+    </section>
+    <section id="portfolio" style="background-color: rgb(151, 194, 217);">
+    <div class="row">
+          <div class='col-md-6 col-md-offset-3' style="text-align: center;">
+                <h2 style="font-size: 32px;color: #fff;text-transform: capitalize;">Fun+Tech</h2><br/><br/></div>
+        </div>
+      <div id="animation_container" style="background-color:rgba(102, 102, 255, 0.00);text-align: center;">
+        <img src="images/techfun.png" class="set2" style="left: 37%;"><br/><br/><br/>
+            </div>
+            <div class="row">
+          <div class='col-md-6 col-md-offset-3' style="text-align: center;padding-top: 20px;">
+<h2 style="font-size: 20px;color:blue;font-family:Times New Roman;">Big Brand Theory</h2>
+                         
+			   <p style="color: #fff;padding-left: 12px;padding-right: 12px;">
+				 The event is all about creating your own “Big Brand” , marketing and advertisement
+is a part of the tasks that will follow. A fake concept of a product will be given to you and all you need to is
+market yourself .
+				
+<br><br><a href="bbt.html" target="_blank"><button class="btn" style="background-color:white;">Read More</button></a>
+		
+				
+			  <br/></p></div>
+        </div>
+    </section>
+    <!--<section id="portfolio" style="background-color: rgb(177,192,203);">
+    <div class="row">
+          <div class='col-md-6 col-md-offset-3' style="text-align: center;">
+                <h2 style="font-size: 32px;color: #fff;text-transform: capitalize;">App Designing</h2><br/><br/></div>
+        </div>
+      <div id="animation_container" style="background-color:rgba(102, 102, 255, 0.00);text-align: center;">
+        <img src="images/app.png" class="set2" style="left: 37%;"><br/><br/><br/>
+            </div>
+            <div class="row">
+          <div class='col-md-6 col-md-offset-3' style="text-align: center;padding-top: 20px;">
+                <p style="color: #fff;padding-left: 12px;padding-right: 12px;">Creating a homepage of the app you are
+               going to present. The homepage can be any
+               sketch/model/picture/mood-board/actual homepage.
+			   - Participants would need to explain the
+              working of their apps along with a presentation on what
+              purpose the app serves in the final round.<br/><br/></p></div>
+        </div>
+    </section>-->
+    </div>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="scrl" style="background-color: rgb(78,97,189);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 style="margin-bottom: 50px; color: #fff">Write to Us</h2>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <form method="post" action="contact.php">
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label style="color: white">Name</label>
+                                <input type="text" class="form-control" placeholder="Name" name="name" id="name" required data-validation-required-message="Please enter your name." style="color: #2c3e50">
+                                <p class="help-block text-danger"></p>
+                                </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label style="color: white">Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" name="email" id="email" required data-validation-required-message="Please enter your email address." style="color: #2c3e50">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label style="color: white">Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Phone Number" name="phone" id="phone" required data-validation-required-message="Please enter your phone number." style="color: #2c3e50">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label style="color: white">Message</label>
+                                <input rows="5" class="form-control" placeholder="Message" name="message" id="message" required data-validation-required-message="Please enter a message." style="color: #2c3e50">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <input type="submit" class="btn btn-success btn-lg" value="Send" >
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+  <div class="row" id ="">      
+    <div class='col-md-6 col-md-offset-3' style="text-align: center;">
+	   <div class="footer-social-icons">
+         <ul class="social-icons">
+          <li><a href="https://www.facebook.com/upescsi" target="_blank" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/upescsi" target="_blank" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/upescsi" target="_blank" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+	    </ul>
+      </div>
+   </div>
+  </div>
+  
+</section>
+
+   <div class="bottom-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-4 col-sm-12 col-md-4">
+                <p>©UPES-CSI. All Rights Reserved</p>
+            </div>
+                 
+		</div>
+	</div>
+  </div>
+
+ 
+
+    <!-- jQuery -->
+     <script type="text/javascript">
+
+    
+    $(window).bind("load", function() { 
+              $('.preload').delay(3500).fadeOut(); 
+      });
+ </script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+ 
+
+    <!-- Plugin JavaScript -->
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <script src="js/freelancer.js"></script>
+
+
+</body>
+</html>
