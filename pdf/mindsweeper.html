@@ -1,0 +1,175 @@
+<!doctype>
+<html>
+<head>
+  
+<title>Mind Sweepers||Elysium</title>
+  <link href="css/styletheme.css" type="text/css" rel="stylesheet">
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    
+<link rel="icon" type="image/png" href="favicon.png" />   
+   </head>
+  <style>
+  	.text {
+  text-align: center;
+  margin-top:-10px;
+  
+  
+ 
+}
+.text a { color:#ff9999; text-decoration: none; font-size:42px;font-weight:100;font-family:OCR A Std;}
+ 
+ .text a:hover{ color:#ff9999; }
+  
+  h1{
+  text-align:center;
+  color:#ff9999;
+  font-family:OCR A Std;
+  }
+  p{
+  text-align:center;
+  color:white;
+  font-family:Times New Roman;
+  font-weight:100;
+  font-size:20px;
+  padding-left:10px;
+  padding-right:10px;
+  }
+  h2{
+  color:burlywood;
+  padding:10px;
+  font-family:Helvetica;
+  }
+  li{
+  color:white;
+  padding-left:10px;
+  font-size:20px;
+  font-weight:100;
+  font-family:Times New Roman;
+  
+  }
+  a{
+  padding-left:5px;
+  color:white;
+  font-size:18px;
+  font-weight:100;
+  }
+  a:hover{
+  text-decoration:none;
+  color:white;
+  }
+  </style>
+</head>
+<body>
+<div class="ctf">
+    <div class="row">
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+			   <img src="images/elysium.png" class="img-responsive" style="height:200px;width:450px;">
+			</div>
+         </div>
+	<div class="row">
+	</div>
+    
+    
+	<div class="row">
+	    <div class="col-xs-12">
+		    <div class="text">
+                           <h1>
+                                <a class="typewrite"  data-period="2000" data-type='[ "Mind Sweeper" ]'>
+                                <span class="wrap"></span>
+                                </a>
+                            </h1>
+            </div>
+			<script>
+					var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+					
+					
+					</script>
+					
+                    
+		    
+			<div class="row">
+			   <div class="col-sm-12 col-sm-offset-0  col-xs-10 col-xs-offset-1">
+			<!--<h2>Problem Statement</h2>-->
+			<ol start="1">
+			<li>This is a team event where each team consists of 5 members (same year). It 
+             consists of two rounds first MIXED BAG and second HACKBOX.</li>
+			  <li>The first round i.e. 
+               mixed bag will consist of questions from cryptography, basics of cyber security, 
+               Linux, Cloud and IT etc.</li>
+			  <li>Top teams would qualify for the second round. In second 
+            round every team would be given questions from the bandit level (question from 
+             war games ).</li>
+			  
+			  <li> Teams would have to open a Linux terminal window and perform 
+               some basic Linux operations. The competiti
+              on would be an SSH provided by the 
+              site only.</li>
+			  <li>Students just need to follow the instructions that they get during the 
+Bandit play and find the password from different files in SSH. </li>
+<li> The team that 
+finishes the task first wins the event.</li>
+			  </ol>
+		      </div></div>
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>
