@@ -1,0 +1,8 @@
+.text {
+  background-color:#ce3635;
+  text-align: center;
+  color:#fff;
+  padding-top:10em;
+}
+
+.text a { color:#fff; text-decoration: none;}
